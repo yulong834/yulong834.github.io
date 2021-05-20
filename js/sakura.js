@@ -149,4 +149,3 @@ function stopp() {
         startSakura();
     }
 }
-x1.00
