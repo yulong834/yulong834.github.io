@@ -557,7 +557,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                             <div class="card frind-card1">
                                 <div class="frind-ship">
                                     <div class="title">
-                                        <img src="https://www.gejiba.com/view.php/a22ad9cde55ff82fde1e5c7c9df05c94.jpg" alt="img">
+                                        <img src="https://www.gejiba.com/view.php/fdf8e5409f78cc588af85f8b2dcd9d9e.jpg" alt="img">
                                         <div>
                                             <h1 class="friend-name">小帅导航</h1>
                                             <p style="position: relative;top: -35px;">常用网站</p>
@@ -578,7 +578,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                             <div class="card frind-card2">
                                 <div class="frind-ship">
                                     <div class="title">
-                                        <img src="https://www.gejiba.com/view.php/a9de06d2a51c9c47b326909ea8eed88b.jpg" alt="img">
+                                        <img src="https://www.gejiba.com/view.php/6d4e936dbccb59a2e808f604e9516e6b.jpg" alt="img">
                                         <div>
                                             <h1 class="friend-name">小帅储物间</h1>
                                             <p style="position: relative;top: -35px;">资源站</p>
@@ -681,7 +681,9 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
@@ -695,22 +697,23 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             
             
             
+                
             
             
-                  
-		<span id="busuanzi_container_site_pv" style='display:none'></span>
-			<i class="fa fa-heart-o"></i>
-			本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
-
-	    
-
-	    
-		<span id="busuanzi_container_site_uv" style='display:none'></span>
-			人次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
-
-	    
-
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;siteTotalVisits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;siteTotalVisitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
             <br>
+
+            <!-- 运行天数提醒. -->
             
             <br>
             
@@ -751,7 +754,6 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 </footer>
 
 <div class="progress-bar"></div>
-
 
     <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">
