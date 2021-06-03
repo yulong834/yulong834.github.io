@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, JavaScript JQuery Vue.js CSS">
+    <meta name="keywords" content="css, JavaScript JQuery Vue.js CSS">
     <meta name="description" content="本科 | 计算机科学与技术 | 专注于Web">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | yulong&#39;s Blog</title>
+    <title>css | yulong&#39;s Blog</title>
     <link rel="icon" type="image/jpeg" href="/medias/avatar.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">css</h1>
                 </div>
             </div>
         </div>
@@ -446,14 +446,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-05-20
+                    2021-06-03
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-05-20
+                    2021-06-03
                 </div>
                 
 
@@ -462,7 +462,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    20 分
                 </div>
                 
 
@@ -481,19 +481,662 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
+                <p>css<br>1、入门<br>    1) 什么是css<br>        层叠样式表，用于修饰页面元素【人靠衣装马靠鞍，狗配铃铛跑的欢】</p>
+<pre><code>    层叠
+        多个样式表修饰同一个元素
+    样式表(声明块)
+        {
+            color:#fff;
+        }
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
+2) css语法
+    选择器 {
+        样式名:样式值;
+        样式名:样式值;
+        ...
+    }
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
+3) css可读性【MDN】
+    1. 空白字符
+        空格、tab字符和换行
+        .class {
+            color:'red';
+            font-size:18px;
+        }
+    2. 注释  ctrl + /
+        /* 注释 */
+        作用：
+             解释说明，便于代码维护和管理
+    3. 速写
+        padding-top:5px;
+        padding-right:10px;
+        padding-bottom:15px;
+        padding-left:20px;
+        ==&gt;等价于
+        padding: 5px 10px 15px 20px;
+    4. 选择器组
+        .one , .two , .three {
+            color:'red';
+        }
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
+4) 在html中如何应用css
+    1. 内部style标签【内部样式表】
+        将样式添加到head标签中的style标签里
+        &lt;style&gt;&lt;/style&gt;
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    2. 内联style属性【内联样式表】
+        在元素中添加style属性
+        &lt;div style="width:100px;height:100px;"&gt;&lt;/div&gt;
+
+    3. 外部link导入【外部样式表】
+        将样式单独抽离出来，写成一个css文件，在head标签中通过link标签导入
+        &lt;link rel="stylesheet" href=""&gt;
+
+    4. @import导入
+        将样式单独抽离出来，写成一个css文件，在style标签内通过@import导入路径
+        &lt;style&gt;
+            @import './test.css';
+        &lt;/style&gt;    
+
+    link和@import的区别
+        1) 所属范围
+            @import 是css的语法，只能导入样式
+            link是html的标签，不仅可以加载样式，还可以定义rel属性
+                rel="stylesheet"表示调用外部样式表
+        2) 加载顺序
+            页面加载的时候，link标签引入的css被同时加载
+            @import引入的css在页面加载完毕后再被加载
+        3) 兼容性
+            @import需要兼容IE5+
+            link标签，不存在兼容性问题
+</code></pre>
+<p>2、选择器<br>    1) 基本选择器<br>        标签选择器<br>            含义：根据指定的标签名，在当前文件中找到所有该名称的标签，设置属性<br>            格式：<br>                标签名 {<br>                    样式名:样式值<br>                }<br>            注意：<br>                1. 标签选择器选中的是当前文件中所有的标签, 而不能单独选中某一个标签<br>                2. 标签选择器无论标签藏得多深都能选中<br>                3. 只要是HTML中的标签就可以作为标签选择器</p>
+<pre><code>    类选择器
+        含义: 根据指定的类名找到对应的标签, 设置属性
+        格式:
+            .类名{
+                属性:值;
+            }
+        注意:
+            1. 在同一个文件中的class可以重复
+            2. 使用class选择器时要在class前面加上.
+            3. 类名的命名规范和id名称的命名规范一样
+            4. 在HTML中每个标签可以同时绑定多个类名
+                格式:
+                &lt;div class="类名1 类名2 ..."&gt;&lt;/div&gt;
+                错误的写法:
+                &lt;p class="para1" class="para2"&gt;&lt;/p&gt;
+
+    id选择器
+        含义：根据指定的id找到对应的标签，设置属性
+        格式：
+            #id {
+                样式名:样式值
+            }
+        注意：
+            1. 在同一个文件中的id不可以重复
+            2. 使用id选择器时要在id前面加上#
+            3. id有一定的规范
+                id的名称只能由字母/数字/下划线
+                    a-z 0-9 _
+                id名称不能以数字开头
+                id名称不能是HTML标签的名称
+
+    逗号选择器
+        含义: 同时给多个选择器选中的标签设置属性
+        格式:
+            选择器1,选择器2{
+                样式名:样式值
+            }
+        注意:
+            1. 逗号选择器使用,来连接
+            2. 选择器可以使用 标签名称、id、class
+
+    组合选择器【了解】
+        含义: 给同时具备多个选择器的标签设置属性
+        格式:
+            选择器1选择器2{
+                样式名:样式值;
+            }
+        注意:
+            1. 选择器和选择器之间没有任何的连接符号
+            2. 选择器可以使用 标签名称、id、class
+            
+    普遍选择器
+        含义: 给当前文件所有的标签设置属性
+        格式:
+            * {
+                样式名:样式值;
+            }
+        
+2) 层次选择器
+    子代选择器
+        含义: 找到指定标签中所有的直接子元素, 设置属性
+        格式:
+            标签名称1&gt;标签名称2{
+                样式名:样式值;
+            }
+        先找到所有名称叫做"标签名称1"的元素, 然后在这个标签中查找所有第一代子元素名称叫做"标签名称2"的元素
+        注意:
+            1. 子元素选择器只会查找第一代子元素, 不会查找被嵌套的元素
+            2. 子元素选择器之间需要用 &gt; 连接
+
+    后代选择器
+        含义: 找到指定标签的所有的后代元素, 设置属性
+        格式:
+            标签名称1 标签名称2{
+                样式名:样式值;
+            }
+        先找到所有名称叫做"标签名称1"的元素, 然后再在这个元素下面去查找所有名称叫做"标签名称2"的元素, 然后在设置属性
+        注意:
+        1. 后代选择器必须用空格隔开
+        2. 后代不仅仅是儿子, 也包括孙子/重孙子, 只要最终是放到指定标签中的都是后代
+
+    兄弟选择器
+        1. 相邻兄弟选择器
+            含义: 给指定选择器后面紧跟的那个选择器选中的标签设置属性
+            格式:
+                选择器1+选择器2{
+                    属性:值;
+                }
+            注意:
+            1.相邻兄弟选择器必须通过+连接
+            2.相邻兄弟选择器只能选中紧跟其后的那个标签, 不能选中被隔开的标签
+        2. 通用兄弟选择器
+            含义: 给指定选择器后面的选择器选中的所有标签设置属性
+            格式:
+                选择器1~选择器2{
+                    属性:值;
+                }
+            注意:
+            1.通用兄弟选择器必须用~连接
+            2.通用兄弟选择器选中的是指定选择器后面某个选择器选中的所有标签, 无论有没有被隔开都可以选中
+
+3) 属性选择器
+    含义: 根据指定的属性名称找到对应的标签, 然后设置属性
+    格式:
+        [attribute]
+            找到所有具有该属性名的标签, 设置属性
+        [attribute=value]
+            找到所有属性值为value的标签, 设置属性
+        [attribute^=value]
+            找到所有以value开头的标签, 无论有没有被-隔开
+        [attribute$=value]
+            找到所有以value结尾的标签
+        [attribute~=value]
+            找到拥有独立value的标签, value不可以和其他属性连接
+        [attribute*=value]
+            只要包含value就可以找到
+    最常见的应用场景, 用于区分input
+        input[type=password] {
+
+        }
+        &lt;input type="text"&gt;
+        &lt;input type="password"&gt;
+        &lt;input&gt;
+
+4) 伪类选择器
+    在选择器的后面使用: 用于添加特殊的效果
+    1. 与子元素相关
+        :first-child    选中同级别中的第一个标签
+        :last-child        选中同级别中的最后一个标签
+        :nth-child(n)    选中同级别中的第n个标签
+            数字
+            字符
+                odd
+                even
+            
+        &lt;p&gt;段落一&lt;/p&gt;
+        &lt;p&gt;段落二&lt;/p&gt;
+        &lt;p&gt;段落三&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;
+                &lt;p&gt;段落四&lt;/p&gt;
+                &lt;p&gt;段落五&lt;/p&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+
+    2. 与状态相关
+        :link          未访问的链接
+        :hover         鼠标悬浮时的元素
+        :active     激活链接
+        :visited     已访问的链接
+        :focus        聚焦时
+
+5) 伪元素选择器
+    在选择器的后面使用:: 用于添加元素
+    ::after        
+    ::before
+
+6) 选择器优先级【级联】
+    1. !important
+        优先级最高，不推荐
+    2. 特性值
+        1000
+            内联style属性
+        100
+            id               
+        10
+            类名选择器、伪类选择器、属性选择器
+        1
+            标签选择器、伪元素选择器
+    3. 代码顺序
+        如果样式具有相同的特性值，则看代码顺序，样式离元素近的优先级更高
+</code></pre>
+<p>3、字体样式、文本样式、列表样式<br>    1) 字体样式 font- (可以被继承)<br>        color<br>        font-style    字体斜体<br>            normal    不开启斜体<br>            italic    开启斜体<br>        font-weight    字体粗细<br>            normal    正常字体<br>            bold    粗的字体<br>            bolder<br>            lighter    更细的字体<br>            100~900    400等同于normal，700等同于bold<br>        font-size    字体大小<br>            浏览器默认字体为16px<br>        line-height    行高<br>            可设置文本垂直居中<br>            设置的值为当前文本的父元素的高度即可垂直居中<br>        font-family    字体族，提供可选字体列表，当用户电脑没有某个字体时，依次查找列表中的字体<br>            取值：指定字体族名称<br>            “微软雅黑”<br>            “Microsoft YaHei”<br>            “宋体”<br>            serif 衬线字体<br>            sans-serif 无衬线字体<br>            fangsong 一种汉字字体，介于宋体和楷体之间。这种字体常用于某些政府文件</p>
+<pre><code>    速写
+        1. 必须包含font-size、font-family
+        2. font-style、font-weight必须在font-size之前
+        3. font-family必须在最后
+
+        font:font-style font-weight font-size font-family;
+        例如：italic bold 12px 'Microsoft YaHei',serif;
+        
+2) 文本样式 text- (可以被继承)
+    text-align    内容相对于它的块级父元素的对齐方式
+        left 左对齐
+        center 居中对齐
+        right 右对齐
+        justify    两侧对齐
+
+    text-decoration 文本修饰线
+        underline 下划线
+        overline    上划线
+        line-through 贯穿线(删除线)
+
+    text-indent 首行缩进
+        px
+        em
+        %
+
+    text-shadow 文本阴影
+        px    x轴偏移量
+        px    y轴偏移量
+        blur    模糊距离
+        color    阴影颜色
+
+    text-transform 字体改变
+        lowercase    小写
+        uppercase    大写
+        capitalize    首字母大写
+
+3) 列表样式
+    list-style-type    列表标志类型
+        disc    实心圆点 (默认值)
+        circle    空心圆点
+        square    实心方块
+        ...
+    list-style-image 列表标志
+        url('')
+    list-style-position 列表标志的位置
+        outside
+        inside
+    list-style 速写【顺序没有影响】
+        type
+        image
+        postition
+
+4) 拓展
+    1. 文字水平、垂直居中
+        水平：text-align:center;
+        垂直：line-height:父元素高度;
+    2. 子元素在父元素中水平垂直居中
+        父元素display:table-cell; vertical-align:middle;text-align: center;
+        子元素display:inline-block;
+    3. 消除a标签默认样式
+        text-decoration:none;
+        color:#333;
+        cursor:default;
+            help
+            pointer
+            wait
+            ...
+</code></pre>
+<p>4、css单位<br>    1) 颜色<br>        1. 关键字<br>            red、orange、yellow…<br>            color:red;<br>        2. 十六进制<br>            #333333 ==&gt; #333<br>            color:#333;<br>        3. rgb函数<br>            r 红色<br>            g 绿色<br>            b 蓝色<br>            color:rgb(0,0,0);<br>        4. rgba函数<br>            r 红色<br>            g 绿色<br>            b 蓝色<br>            a 此颜色的透明度 0~1<br>            color:rgba(0,0,0,0.5);<br>        5. 渐变色<br>            background-image: linear-gradient(to right,red,yellow);</p>
+<pre><code>    拓展：父元素设置透明度，如何不影响到子元素？
+        父元素使用rgba设置透明度
+
+        opacity会影响子元素的透明度
+
+2) 长度
+    1. 绝对单位
+        px
+    2. 相对单位
+        em    
+            1em = 当前元素上的font-size的值
+            font-size:16px;
+            1em = 16px;
+            2em = 32px;
+        rem 相对于根元素html
+            html{font-size:14px}
+            1rem = 14px;
+        %
+            相对于父元素
+</code></pre>
+<p>5、网络字体(字体图标库的使用)<br>    1) webfont    <a target="_blank" rel="noopener" href="http://www.xiazaiziti.com/tag/ttf?btwaf=17865710">http://www.xiazaiziti.com/tag/ttf?btwaf=17865710</a><br>        1. 下载对应的字体，如此处的ttf字体<br>        2. 将下载好的字体文件放到对应的目录<br>        3. 在style标签中引入<br>            @font-face {<br>                font-family: ‘随意’;<br>                src: url(‘./HYXinHaiXingKaiW.ttf’);<br>            }<br>        4. 在需要使用字体的文本的标签加上font-family即可<br>            .test {<br>                font-family:’随意’;<br>            }</p>
+<pre><code>2) 字体图标库iconfont、fontawesome
+
+    iconfont
+        1.加购 -&gt; 添加至项目 -&gt; 生成在线链接
+        2.复制在线css代码到icon.css(自己新建)
+        3.使用&lt;i class="iconfont 图标名"&gt;&lt;/i&gt;
+    
+    fontawesome
+        1. 在bootcdn中搜索fontawesome，引入link到页面
+        2. 使用&lt;i class="fa fa-user-circle"&gt;&lt;/i&gt;
+        或者
+        1.下载离线fontawesome
+        2.引入离线包（所有）
+        3.使用&lt;i class="fa fa-user-circle"&gt;&lt;/i&gt;
+</code></pre>
+<ol start="6">
+<li><p>盒子模型</p>
+<ol>
+<li><p>盒子属性<br> width<br> height<br> margin</p>
+<pre><code> margin-top
+ margin-right
+ margin-bottom
+ margin-left
+ margin
+     margin:10px;        上右下左    
+     margin:0 10px;     上下为0，左右10px
+     margin:0 5px 10px;     上0，左右5px，下10px
+     margin:0 5px 10px 15px;     上右下左    
+</code></pre>
+<p> border</p>
+<pre><code> border-width     边框宽度
+ border-style     边框线类型
+     solid    实线
+     dotted    点
+     dashed    虚线
+     double    双实线
+ border-color     边框线颜色
+ border-radius    边框圆角
+
+ 速写
+     border:1px solid #333;
+</code></pre>
+<p> padding</p>
+<pre><code> padding-top
+ padding-right
+ padding-bottom
+ padding-left
+</code></pre>
+<p> box-shadow</p>
+<p> background-color    背景颜色<br> background-image    背景图片<br> background-repeat     背景重复方式</p>
+<pre><code> repeat-x
+ repeat-y
+ no-repeat
+</code></pre>
+<p> background-size        背景图片大小</p>
+<pre><code> background-size:100% 100%;
+</code></pre>
+<p> 一个盒子的组成</p>
+<pre><code> width、padding、border、margin
+</code></pre>
+</li>
+<li><p>盒子分类<br> 盒子可以通过box-sizing来设置分类</p>
+<ol>
+<li><p>内容盒子【W3C标准盒子】【默认】<br> box-sizing:content-box;</p>
+<p> width = 内容宽<br> 所占的宽 = width + padding + border + margin</p>
+</li>
+<li><p>边框盒子【IE盒子】<br> box-sizing:border-box;</p>
+<p> width = 内容宽 + padding + border<br> 所占宽 = width + margin</p>
+</li>
+</ol>
+<p> margin:20px,border:10px,padding:10px;width:200px;分别计算两种盒子模型下所占的宽</p>
+<p> 内容盒子</p>
+<pre><code> 所占的宽 = width + padding + border + margin
+         = 200 + 10*2 + 10*2 + 20*2
+         = 280px
+</code></pre>
+<p> 边框盒子</p>
+<pre><code> 所占的宽 = width + margin
+         = 200 + 20*2
+         = 240px
+</code></pre>
+<p> margin重叠【margin塌陷】</p>
+<pre><code> 两个盒子上下排布，竖直方向的margin不叠加，只取较大的值作为两个盒子的间距
+ (水平方向的margin是可以叠加的)
+</code></pre>
+</li>
+</ol>
+</li>
+</ol>
+<p>7、浮动布局<br>    1. float<br>        含义：浮动布局，使用后会使元素向左或者向右移动<br>        取值：<br>            left    左浮动<br>            right    右浮动<br>            none    【默认】不浮动<br>        特点：<br>            1、使用浮动的元素会脱离文档流【置物架】<br>            2、使用浮动的元素的宽、高度默认由内容决定，可设置宽、高<br>            3、原先所在位置就会被其他块元素填充<br>            4、浮动元素在一行中依次排列，当一行无法容纳的时候会自动换行<br>        案例：<br>            1、全部浮动<br>            2、左边浮动，右边不浮动<br>            3、左右浮动，中间不浮动<br>                中间的元素要写在最后面</p>
+<pre><code>    清除浮动的方式
+        1、浮动元素的父级元素： overflow:hidden;
+        2、浮动元素的父级元素： ::after{clear:both;content:'';display:block;}
+        3、浮动元素的同级：添加一个空标签，并且设置clear:both;
+    1) 七列布局
+    2) nav的伪元素竖线
+    拓展
+        如何让元素使用margin:0 auto，水平居中
+        只对块级元素生效，所以margin:0 auto的用法分为三种，分别为
+            块级元素：div、h1~h3、ul
+                /*对于块级元素，只需要设置width*/
+                div{
+                    width: 200px;
+                    background-color: #ccc;
+                    margin:0 auto;
+                }
+
+            行内元素：span、a
+                /*对于行内元素，需要先设置为块级元素，再加宽度*/
+                span{
+                    display: block;
+                    width: 100px;
+                    background-color: red;
+                    margin:0 auto;
+                }
+
+            行内块元素：button、img、input、textarea
+                /*对于行内块级元素，需要设置为块级元素，可以不用设置宽度*/
+                input{
+                    display: block;
+                    margin:0 auto;
+                }
+</code></pre>
+<p>8、定位布局<br>    1) 作用：当一个元素悬挂在其他元素之上，优先考虑定位布局<br>            eg: 模态框、二级菜单、固定宣传栏</p>
+<pre><code>2) 特点
+    1. 可以使用top、right、bottom、left描述当前元素的位置
+    2. 可以设置z轴距离，z-index
+    3. 存在参照点
+    4. 是否脱离文档流
+
+3) 用法：
+    position:static/ relative / absolute / fixed / sticky
+
+    static         静态布局，默认文档流中，非定位元素【默认】
+
+    relative    相对定位
+        1) 没有脱离文档流
+        2) 参照点为当前元素原本的位置
+
+    absolute    绝对定位
+        1) 脱离了文档流
+        2) 参照距离当前元素最近的父定位元素，如果所有的父元素都没有定位元素，参照浏览器视口
+
+        模态框、二级菜单、nav的伪元素竖线
+
+        一、有一个盒子，希望子元素距离父元素的上方有间距
+            1. 给父元素设置内边距
+                padding-top:50px;
+            2. 给子元素设置相对定位
+                position:relative;
+                top:50px;
+            3. 给父元素设置相对定位，子元素设置绝对定位
+                height: 100px;
+                width:100%;
+                position:absolute;
+                top: 50px;
+            4. 给子元素设置浮动
+                float:left;
+                width:100%;
+                margin-top:50px;
+        二、水平垂直居中的方法
+            1. 父元素相对定位，子元素绝对定位，margin:auto;left:0;right:0;top:0;bottom:0;
+            2. 父元素相对定位，子元素绝对定位，子元素left:50%,top:50%;margin-left:-子元素一半的宽度;margin-top: - 子元素一半的高度 
+
+    fixed         固定定位
+        1) 脱离了文档流
+        2) 参照浏览器视口
+
+    sticky         粘滞定位
+        1) 不脱离文档流
+        2) relative 和 fixed 的结合
+            top:50px
+            当当前元素距离浏览器视口顶端为50px的时候，体现fixed的特点
+
+1、overflow
+    auto：自适应，内容如果溢出，会自动生成滚动条
+    scroll：将超出的内容进行裁剪（也就是不显示），并以滚动条的方式显示超出的内容（若不设置隐藏滚动条，滚动条一直存在）。
+    hidden：将超出内容进行裁剪，不会出现滚动条
+2、浮动与绝对定位脱离文档流的区别(主要体现在 元素内文本的位置)
+    float：其他盒子会无视当前元素，从浏览器左上角开始布局，而盒子内的文本依旧会为浮动的元素让出位置
+    绝对定位：其他盒子与盒子内的文本都会无视当前元素，从左上角开始布局
+</code></pre>
+<p>9.伸缩盒布局<br>    伸缩盒布局<br>    1) 作用：使得子元素在父元素中分列显示，与float的作用类似。一般用于响应式布局（手机app中）</p>
+<pre><code>2) 属性：
+    display:flex; 将元素设置为伸缩盒布局
+    flex-direction 主轴的方向
+        column    y轴(行布局)            上中下
+        row     x轴(列布局)【默认】  左中右
+    flex-wrap    自动换行
+        当多个元素整体的宽度/高度在主轴方向上，超过主轴的大小时，设置换行
+        wrap    超出时换行
+        nowrap    超出时不换行【默认】
+    flex    剩余空间按比例划分
+        flex-grow    flex容器中剩余空间的多少应该分配给项目（flex增长系数）
+        flex-shrink    指定了 flex 元素的收缩规则
+        flex-basis    指定了 flex 元素在主轴方向上的初始大小
+        速写
+            flex: grow shrink basis;        
+    举例：
+        &lt;ul&gt;
+            &lt;li&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        父元素 ul  伸缩盒
+        1）设置父元素为伸缩盒
+            display:flex
+        2)主轴（默认情况为x轴，元素按照主轴方向排列）
+            flex-direction:row / column
+        3)伸缩盒自动换行(默认不换行nowarp)
+            display:nowrap / warp
+
+        子元素 li   伸缩盒元素
+        1）基础值（主轴上元素的基础值宽/高）
+            flex-basis
+        2）对剩余空间的分配
+            flex-grow
+        3）对收缩空间的分配
+            flex-shrink
+        速写形式：
+            flex: grow shrink basis
+align-items    交叉轴方向上的显示
+    stretch    在交叉轴方向被拉伸到与容器相同的高度或宽度
+    center    在交叉轴居中
+    flex-start    元素向交叉轴起点对齐
+    flex-end    元素向交叉轴终点对齐
+justify-content    主轴方向上的显示
+    flex-start    元素向交叉轴起点对齐
+    center    在主轴居中
+</code></pre>
+<p>10.动画<br>    1) 动画定义<br>        @keyframes 动画名称{<br>            from {</p>
+<pre><code>        }
+        to{
+
+        }
+    }
+    =》
+    @keyframes 动画名称{
+        10% {
+            
+        }
+        20%{
+
+        }
+        ...
+        100%{
+
+        }
+    }
+2) 动画应用    小球运动
+    animation-name:动画名称;
+    animation-duration:        动画持续时间
+        5s; 
+    animation-delay:             动画的延迟
+        1s
+    animation-direction     动画运动方向
+        reverse
+        alternate
+    animation-fill-mode:     动画结束后保留哪个样式
+        forwards    保留最后一帧的样式
+        backwards 保留第一帧的样式
+    animation-iteration-count:     动画执行的次数
+        4
+        infinite
+    animation-timing-function:     动画执行的时间曲线
+        linear
+        steps
+        ease
+        ease-in
+        ease-out
+        ease-in-out
+    animation-play-state: ;    动画播放状态
+        running
+        paused
+    animation:    
+        速写形式 
+    animation: animation-name, animation-duration, animation-timing-function,animation-delay,animation-iteration-count,animation-direction,animation-fill-mode ,animation-play-state
+
+    案例：
+        呼吸灯
+        梦幻西游
+        轮播图片
+    
+3) 第三方动画库（animate.css）
+    封装了css3的通用的动画样式，专业
+    https://daneden.github.io/animate.css/
+    1. 引入动画库
+    2. 为元素添加class
+</code></pre>
+<p>11、过渡效果transition<br>    1) transition和animation的区别<br>        1. transition必须要触发，一般使用:hover<br>        2. transition不需要设置关键帧<br>        简单的过渡效果使用transition，复杂的动画使用animation【属性的多少】</p>
+<pre><code>2) 用法
+    transition-property     指定过渡的属性
+        可以不指定属性         none
+        可以指定一个属性     width
+        可以指定多个属性    width,background,border...
+        可以指定所有属性     all
+    transition-duration     过渡持续的时间
+        可以指定秒，以及毫秒     s /ms
+    transition-timing-function     过渡的速度曲线
+        linear
+        steps
+        ease
+        ease-in
+        ease-out
+        ease-in-out
+    transition-delay             过渡的延迟
+        可以指定秒，以及毫秒     s /ms
+    transition                         速写
+        transition:property duration timing-function delay;
+        例如：
+        transition-property: transform,border,margin;
+        transition-duration: 3s;
+        transition-timing-function: linear;
+        ==&gt;
+        transition: transform 3s linear 1s,border 10s linear 1s,margin 10s linear 1s;
+
+    案例
+        mdn上的案例
+        网易严选图片放大案例
+</code></pre>
+<p>12.变形transform<br>    1) 语法<br>        div {<br>            transform: xxx();<br>            transform-origin: center;<br>        }<br>        transform 元素的变形操作<br>        transform-origin 指定元素变形的原点<br>    2) 旋转<br>        rotateX(45deg)        旋转<br>        rotateY(45deg)        旋转<br>        rotateZ(45deg)        旋转<br>        若角度为正，则顺时针方向旋转，否则逆时针方向旋转<br>    3) 倾斜<br>        skewX(45deg)<br>        skewY(45deg)<br>        skew(45deg)<br>    4) 缩放<br>        scale()<br>    5) 移动<br>        translateX(200px)<br>        translateY(300px)<br>        translate(200px,300px)</p>
+<p>博客内容：<br>    1.遇到问题<br>    2.记录方法<br>        iconfont<br>        fontawesome<br>        ttf<br>    3.清除浮动方法
+    </p>
 
                 
             </div>
@@ -520,7 +1163,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://yulong834.github.io/2021/05/20/hello-world/">https://yulong834.github.io/2021/05/20/hello-world/</a>
+                    <a href="https://yulong834.github.io/2021/06/03/css/">https://yulong834.github.io/2021/06/03/css/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -731,13 +1374,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/05/20/a/">
+                <a href="/2021/06/03/js/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="a">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="js">
                         
-                        <span class="card-title">a</span>
+                        <span class="card-title">js</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -748,7 +1391,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-20
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-03
                         </span>
                         <span class="publish-author">
                             
@@ -765,16 +1408,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/05/20/hello-world/">
+                <a href="/2021/06/03/html/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="html">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">html</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -785,7 +1428,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-03
                             </span>
                         <span class="publish-author">
                             
@@ -795,7 +1438,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>

@@ -1,0 +1,3282 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="js, JavaScript JQuery Vue.js CSS">
+    <meta name="description" content="本科 | 计算机科学与技术 | 专注于Web">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>js | yulong&#39;s Blog</title>
+    <link rel="icon" type="image/jpeg" href="/medias/avatar.jpg">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.4.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/comment_bg.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">yulong&#39;s Blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/comment_bg.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">yulong&#39;s Blog</div>
+        <div class="logo-desc">
+            
+            本科 | 计算机科学与技术 | 专注于Web
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">js</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-06-03
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2021-06-03
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    48 分
+                </div>
+                
+
+                
+        <span id="busuanzi_container_site_pv" style='display:none'></span>
+        <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+        <span id="busuanzi_value_page_pv" ></span>
+		
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>1.变量声明方式<br>    var<br>        变量可以重复声明<br>        变量声明能够被提升<br>        没有局部作用域<br>        function foo() {<br>            if(true) {<br>                var a = “hello”<br>            }<br>            console.log(a)<br>            function foo1() {<br>                console.log(a)<br>            }<br>            foo1()<br>        }<br>        foo()<br>        //函数内部的变量不允许在外部访问<br>        console.log(a)</p>
+<pre><code>let
+    不可重复声明
+    变量声明不可被提升
+    有局部作用域
+
+const
+    不可重复声明
+    变量声明不可被提升
+    有局部作用域
+</code></pre>
+<p>2.注释<br>    html <!-- --><br>    css  /*  <em>/<br>    js  /</em>  */<br>        //</p>
+<p>3.数据类型<br>    基本数据类型<br>        number<br>            var a = 1<br>            var a = 1.1<br>            var a = 0X10<br>            var a = 010</p>
+<pre><code>        NaN 不是一个数字
+
+        infinity
+        isFinite()
+            true 不是无穷
+            false 是无穷
+    string
+        "" / ''
+        json字符串
+        {
+            "name":"xiaoli",
+            "age":12
+        }
+    boolean
+        true
+        false  
+
+    null
+        空引用数据类型
+
+    undefined
+        未定义
+
+引用数据类型
+    object
+        function
+        arr
+        正则
+        ……
+</code></pre>
+<p>4.检测数据类型<br>    typeof<br>        -&gt;<br>        number string boolean undefined object function  </p>
+<p>5.值传递，引用传递<br>    var a = 1;<br>    var b = a;<br>    b++<br>    console.log(a,b)</p>
+<pre><code>var obj = {
+    name:"xiaoli",
+    age:3
+}
+var obj1 = obj
+obj1.age++
+console.log(obj,obj1)
+</code></pre>
+<p>6.操作符<br>    算数操作符<br>        + +=<br>        - -=<br>        * *=<br>        / /=<br>        %</p>
+<pre><code>比较操作符
+    &gt;
+    &gt;=
+    &lt;
+    &lt;=
+    ==
+        先转换为同一数据类型再进行比较
+    ===
+        先比较数据类型，数据类型不一致直接返回false
+
+逻辑运算符
+    &amp;&amp;
+        同真为真，有假则假
+        1.如果第一个操作数位null/NaN/undefined/0/false/"",直接返回第一个操作数
+        2.如果第一个操作数位其他，返回第二个操作数
+        var gender = male;
+        var age = 6;
+        if (gender="male" &amp;&amp; age&gt;3) {
+
+        }
+    
+    ||
+        有真即真，同假才假
+        1.如果第一个数是其他，则返回第一个数    
+        2.如果第一个操作数是null,NaN,undefined,false,0,"" 则返回第二个操作数
+
+    !
+        !a,如果a不是boolean类型的，就先将a转换成boolean
+        取反
+
+三目操作符
+    表达式1 ? 表达式2 : 表达式3
+    var age = 12
+    var age &gt; 18 ? "成年人" : "未成年"
+
+
+=======08-19=======
+一元运算符
+    +  
+        +3 //3
+        +true //1
+    ++
+        var a = 3;
+        console.log(a++)
+        console.log(++a)
+        var result = a++ + ++a
+        
+        console.log(result)
+        console.log(a)
+    -  
+        -3  //-3
+        -true  //-1
+        -(-true)  //1
+    --
+
+位运算   
+</code></pre>
+<p>7.类型转换<br>    -&gt;number<br>        方式<br>            Number(a)<br>            +a<br>            -(-a)<br>            parseInt(a)<br>            parseFloat(a)</p>
+<pre><code>    a的取值
+        string
+            ""  0
+            "hello"   NaN
+            "3"  3
+        boolean
+            true   1
+            false  0
+        null/undefined   
+            0
+            NaN 
+
+-&gt;string
+    方式
+        String(a)
+        a+""
+        a.toString()
+            var a = 12
+            console.log(a.toString())
+            注意：null/undefined不能调用
+
+    a的取值
+        number
+        boolean
+        null
+        undefined
+
+-&gt;boolean
+    方式
+        Boolean(a)
+        !!a
+
+    a的取值
+        number
+            0  false
+            1  true
+            NaN  false
+
+        string
+            "a"     true
+            ""      false
+
+        null/undefined
+            false
+</code></pre>
+<p>8.流程控制语句<br>    1、分支语句<br>        if分支<br>            if() {</p>
+<pre><code>        } else if() {
+
+        }
+        ...
+        else {
+
+        }
+
+    switch分支
+        解决if-else if -...-else繁琐，switch更加简洁一些
+        switch(v){
+            case c1:
+                ...
+                break;
+            case c2:
+                ...
+                break;
+            ...
+            default:
+                ...
+        }
+        v 表示变量
+        c1、c2、c3、... 常量当 v === c1的时候，执行c1代码块中的内容，break表示跳槽switch代码块
+
+2、循环语句
+    for
+        for(初始化; 结束判定条件; 迭代) {
+            循环体
+        }
+
+    while
+        初始化;
+        while(结束判定条件) {
+            循环体;
+            迭代
+        }
+
+    do-while
+        初始化;
+        do {
+            循环体;
+            迭代
+        }while(结束判定条件)
+
+    for-in
+        a的取值对象或者数组
+        for(var key in a) {
+            console.log(key)
+        }
+</code></pre>
+<p>9.对象<br>    1、初始化<br>        1) 字面量<br>            var obj = {<br>                name:”xioali”,<br>                age:3<br>            }</p>
+<pre><code>    2) 构造函数
+        var obj = new Object()          //var obj = {}
+
+        obj.name = "xiaoli";
+        obj.age = 3
+    
+2、访问
+    1) 点访问
+        obj.name
+
+    2) 中括号访问
+        obj["name"]
+        &lt;==&gt;
+        var name = "name"
+        obj[name]
+
+3、删除
+    delete obj.name
+
+======08-21========
+4、检测属性
+    in
+    hasOwnProperty()
+
+5、对象序列化和反序列化
+    对象序列化
+        将js对象转换成json字符串
+        var obj = {
+            name:"xiaoli",
+            age:3
+        }
+        var json = JSON.stringify(obj)
+
+        '{"name":"xiaoli","age":12}'
+        
+    反序列化
+        将json字符串转回js对象
+        var json = '{"name":"xiaoli","age":12}'
+        var obj = JSON.parse(json)
+
+    案例：路由跳转，携带参数
+
+6、构造函数和原型
+    所有的构造函数都有一个原型
+    所有的原型都有一个constructor属性
+
+    静态属性/方法
+        Object.assgin(obj1,obj2)
+            var obj1 = {
+                name:"xiaoli",
+                age:3
+            }
+            var obj2 = {
+                gender:"male"
+            }
+        Object.keys(obj1)
+        Object.values(obj1)
+        Object.defineProperty()
+            https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
+
+            数据描述符
+                configurable    默认false
+                enumerable      默认false   
+                value           默认undefined
+                writable        默认false
+            
+            访问器描述符
+                configurable
+                enumerable
+                get         读取    默认undefined
+                set         写入    默认undefined
+            
+            var obj = {};
+            Object.defineProperty(obj, 'property1', {
+                value: 42,
+                writable: false
+                // enumberable:true
+                configurable:true
+            });
+
+    非静态属性/方法：
+        声明在函数的原型对象中，所有的实例对象均可调用
+        constructor:构造者【构造函数】
+        toString()
+        valueOf()
+        hasOwnProperty()
+</code></pre>
+<p>10.函数<br>    1、函数定义<br>        函数字面量/函数表达式<br>            var foo = function() {</p>
+<pre><code>        }
+    函数声明
+        function foo() {
+
+        }
+    匿名函数
+        function() {}
+        使用：
+            var arr = [1,2,3,4]
+            arr.forEach(function(item,index){
+                console.log(item,index)
+            })
+
+2、函数调用
+    函数名()
+        function foo(name,age) {
+            console.log(name)
+            console.log(age)
+        }
+        foo("xiaoli",12,"male")
+
+        参数
+            
+    new 构造函数()
+
+    函数名.call(this,参数列表)
+        function foo(name,age) {
+            console.log(name)
+            console.log(age)
+        }
+        foo.call(this,"name",12)
+        foo.call()
+    
+    函数名.apply(this,[参数列表])
+        function foo(name,age) {
+            console.log(name)
+            console.log(age)
+            console.log(1)
+        }
+        foo.apply(this,["name",12])
+        foo.apply()
+    
+3、函数的内部属性
+    形参
+
+    arguments
+        类数组对象，接受实参的真正所在
+        function foo(name,age) {
+            console.log(name)
+            console.log(age)
+            console.log(arguments)
+        }
+        foo("xiaoli",12,"male")
+
+    this
+        this的指向跟函数调用有关
+        如果函数使用"()"来调用，那看一下括号前面是不是函数名，如果是，看函数名前面有没有对象    
+        有，this指向该对象
+        没有，
+            Nodejs环境中    this --&gt; global对象
+            浏览器环境中 this --&gt; window对象
+        nodejs中的this和在浏览器中javascript中的this是不一样的
+        var money = "想要变成有钱人"
+            var obj1 = {
+                money:"我有一个亿",
+                foo:function(){
+                    console.log(this.money)
+                }
+            }
+            var obj2 = {
+                money:"同桌拥有一个亿"
+            }
+        // obj1.foo()
+
+        //通过. call手动更改指向了obj2
+        // obj1.foo.call(obj2)
+        // obj1.foo.apply(obj1)                    
+        
+4、函数提升
+    1.函数字面量/表达式
+        var foo = function() {
+            console.log(12)
+        }
+        foo()
+        &lt;==&gt;
+        var foo;
+        foo = function() {
+            console.log(12)
+        }
+        foo()
+
+    2.函数声明提升
+        function foo() {
+            console.log(12)
+        }
+        foo()
+
+        举例：
+            var foo = function(){
+                console.log("仙女");
+            }
+            function foo(){
+                console.log("魔鬼");
+            }
+            foo();
+            &lt;==&gt;
+            function foo() {
+                console.log("魔鬼")
+            }
+            var foo;
+            foo = function(){
+                console.log("仙女");
+            }
+            foo()
+</code></pre>
+<p>11.数组<br>    1、数组定义<br>        1.数组字面量<br>            var arr = []<br>            var arr = [1,”name”,{name:”xiaoli”},function foo() {}]</p>
+<pre><code>    2.构造函数
+        var arr = new Array()
+        var arr = new Array(1)
+        var arr = new Array(1,2,3)
+    
+2、数组访问
+    中括号访问
+    var arr = [1,2,3]
+    console.log(arr[3])
+
+3、检测是否为数组
+    var arr = [1,2,3]
+
+    Array.isArray()
+        console.log(Array.isArray(arr))
+    
+    instanceof 
+        判断是否是某个构造函数的实例
+        console.log(arr instanceof Array)
+    Array.from()
+    
+    Array.of()
+
+4、数组转换成字符串
+    var arr = [1,2,3]
+    a.toString()
+        console.log(arr.toString())
+    a.join()
+        console.log(arr.join(" "))
+    JSON.stringify()
+
+5、数组相关api
+    1.栈方法[改变原值]
+        pop()   从数组的最后取出一个元素 
+            参数：none
+            返回值： 删除的元素
+            举例：
+                var arr = [1,2,3]
+                console.log(arr.pop())
+        push(p1,p2,....)  在数组的最后插入一个元素
+            参数：要插入的元素
+            返回值：新增元素后数组的长度
+            举例：
+                var arr = [1,2,3]
+                console.log(arr.push(4))
+
+    2.队列[改变原值]
+        shift()     将数组中第一个元素取出来
+            参数：none
+            返回值：删除的元素
+            举例：
+                var arr = [1,2,3]
+                console.log(arr.shift())
+        unshift(p1,p2,....) 
+            参数：要插入的元素
+            返回值：新增元素后数组的长度
+            举例：
+                var arr = [1,2,3]
+                console.log(arr.shift(2))
+
+    3.排序方法[改变原值]
+        sort()
+            举例：
+                var arr = [3,2,1,12,21]
+                console.log(arr.sort()); // [1,12,2,21,3]
+            解决问题：
+                使用比较器函数sort(comparator)
+                    comparator为一个比较器函数，函数可以接受两个值a,b
+                        当a&gt;b返回1时，从小到大排序
+                        当a&gt;b返回-1时，从大到小排序
+                
+                var arr = [3,2,1,12,21]
+                var result = arr.sort(function(a,b) {
+                    if(a&gt;b){
+                        return 1
+                    }else {
+                        return -1
+                    }
+                })
+                console.log(result)     
+      
+    4.截取方法
+        concat()    [不改变原值]
+            将参数中的数组和原数组拼接
+            参数：一个或多个数组
+            返回值：合并后的数组
+            举例：
+                var arr = [1,23,3]
+                var arr1 = [1,1,1]
+                var arr2 = [2,2,2]
+                console.log(arr.concat(arr1,arr2))
+        
+        slice(start,end)     [不改变原值]
+            从使用该方法的数组中截取一个子数组
+            参数：
+                start     起始索引位置
+                end     结束索引位置
+            返回值：截取到的子数组，包含起始位置的项，不包含结束位置的项
+            举例：
+                var arr1 = [1,2,3,4,5];
+                var arr2 = arr1.slice(2,4);
+                console.log(arr1); // [1,2,3,4,5]
+                console.log(arr2); // [3,4]
+            注意：
+                1. 如果只传递了一个参数，截取的就是从该位置之后所有的项，作为新数组
+                    var arr1 = [1,2,3,4,5];
+                    var arr2 = arr1.slice(2);
+                    console.log(arr1); // [1,2,3,4,5]
+                    console.log(arr2); // [3,4,5]
+                2. 如果传递的参数(起始位置)超出了调用改方法的数组的索引，返回的是一个空数组
+                    var arr1 = [1,2,3,4,5];
+                    var arr2 = arr1.slice(5,6);
+                    console.log(arr1); // [1,2,3,4,5]
+                    console.log(arr2); // []
+        
+        splice(begin,delete[,p1,p2,...]) 【改变原值】
+            从数组中删除、插入、更新元素
+            参数：
+                begin
+                    起始位置（删除，插入）
+                delete
+                    删除的个数
+                p1,p2,...
+                    插入的值
+            返回值：
+                删除的元素组成的数组
+
+            一个参数
+                var arr1 = [1,2,3,4,5];
+                var arr2 = arr1.splice(1);
+                console.log(arr1); // [1]
+                console.log(arr2); // [2,3,4,5]
+                删除该位置之后的所有项，被删除项组成一个新数组
+            两个参数
+                var arr1 = [1,2,3,4,5];
+                var arr2 = arr1.splice(1,3);
+                console.log(arr1); // [1,5]
+                console.log(arr2); // [2,3,4]
+                截取数组，第一个参数为开始的位置
+                第二个参数为截取的个数
+            三个参数
+                替换
+                    第一个参数是开始位置
+                    第二个参数是删除的个数
+                    第三个参数是替换的元素
+                插入
+                    第一个参数是开始位置
+                    第二个参数是0
+                    第三个参数是插入的元素
+                var arr1 = [1,2,3,4,5];
+                var arr2 = arr1.splice(1,3,9);
+                console.log(arr1); // [1,9,5]
+                console.log(arr2); // [2,3,4]
+    
+    5.迭代方法
+        forEach(function(item,index,arr){})
+            用法：遍历当前数组
+            参数：function(item,index,arr){}
+                每次遍历一次，这个匿名函数就会被调用一次，forEach将当前遍历的元素，索引，当前数组 当做实参传递给这个匿名函数
+            返回值：无
+
+                var arr = [1,2,3,4,5];
+                var result = arr.forEach(function(item,index,arr){
+                    console.log(item,'item');
+                    console.log(index,'index');
+                    console.log(arr,'arr');
+                })
+                console.log(result); // undefined
+        
+        every(function(item,index,arr){})
+            用法：判断数组中所有的元素是否满足回调函数中给定的条件
+            参数：function(item,index,arr){}
+            返回值：
+                当每次回调函数返回值为true，every方法的结果为true,
+                当回调函数返回值有一次为false,every方法的结果就为false
+
+                var arr = [1,2,3,4,5];
+                var result = arr.every(function(item,index,arr){
+                    return item &gt; 3;
+                })
+                console.log(result); // false
+
+                var arr = [1,2,3,4,5];
+                var result = arr.every(function(item,index,arr){
+                    return item &gt; 0;
+                })
+                console.log(result); // true
+
+        some(function(item,index,arr){})
+            用法：判断数组中是否有满足条件的元素
+            参数：function(item,index,arr){}
+            返回值：
+                当回调函数有一次返回true,some方法的结果就为true
+                当每次回调函数返回false,some方法的结果才为falses
+
+                var arr = [1,2,3,4,5];
+                var result = arr.some(function(item,index,arr){
+                    return item &gt; 3;
+                })
+                console.log(result); // true
+
+                var arr = [1,2,3,4,5];
+                var result = arr.some(function(item,index,arr){
+                    return item &gt; 5;
+                })
+                console.log(result); // false
+
+        filter(function(item,index,arr){})
+            用法：筛选数组中满足条件的元素 (过滤)
+            参数：function(item,index,arr){}
+                当回调函数返回true,当前元素就会被添加到返回值数组中
+            返回值：
+                有满足给定条件的元素时，返回符合条件元素所组成的新数组，
+                没有满足给定条件的元素时，返回空数组
+
+                var arr = [1,2,3,4,5];
+                var result = arr.filter(function(item,index,arr){
+                    return item &gt; 3;
+                })
+                console.log(result); // [4,5]
+
+                var arr = [1,2,3,4,5];
+                var result = arr.filter(function(item,index,arr){
+                    return item &gt; 5;
+                })
+                console.log(result); // []
+
+        map(function(item,index,arr){})
+            用法：使用给定条件处理数组 (映射)
+            参数：function(item,index,arr){}
+                回调函数可以返回任意类型的值，这些值都会被添加到map方法的返回值数组中
+            返回值：
+                返回一个处理后的新数组
+                var arr = [1,2,3,4,5];
+                var result = arr.map(function(item,index,arr){
+                    return item &gt; 3;
+                })
+                console.log(result); // [false,false,false,true,true]
+
+            注意：
+                1. map() 不会对空数组进行检测
+                2. map() 不会改变原始数组
+
+    6.类数组转换为数组
+        1) [...arguments]   
+            改方法只对拥有迭代器的类数组有效，所以自己创建的类数组需要添加迭代器
+        2) Array.from(arguments)
+        3) Array.prototype.slice.call(arguments)
+            举例：
+                function foo() {
+                    console.log(arguments)
+                    console.log([...arguments])
+                    console.log(Array.from(arguments))
+                    console.log(Array.prototype.slice.call(arguments))
+                }
+                foo(1,2)
+
+                // 添加迭代器
+                var obj = {
+                    0:"1",
+                    1:"2",
+                    length:2,
+                    [Symbol.iterator]: Array.prototype[Symbol.iterator]
+                }
+                console.log(obj)
+                console.log([...obj])
+</code></pre>
+<p>12.正则表达式<br>    0、正则表达式修饰符<br>        i   ignoreCase    忽略大小写<br>        m   multiline   执行多行匹配<br>        g   global      全局匹配</p>
+<pre><code>1、定义
+    字面量
+        var pattern = /正则表达式/正则表达式修饰符 
+        举例：
+            var pattern = /he/img
+    构造函数
+        var pattern = new RegExp("正则表达式","正则表达式修饰符")
+        举例：
+            var pattern = new RegExp("\\d","img")
+
+2、正则表达式
+    1.字符类
+        .                匹配任意单个字符
+        \d &lt;==&gt; [0-9]    匹配任意数字
+        \D &lt;==&gt; [^0-9]   匹配任意非数字
+        ^[0-9]           表示以任意数字作为开始
+        \w &lt;==&gt; [a-zA-Z0-9_]  匹配任意字符
+        \W &lt;==&gt; [^a-zA-Z0-9_]  匹配任意非字符
+        \s          空白字符，tab，return...
+        \S          非空白字符
+
+    2.分组
+        ()代表分组，在正则表达式中用()包起来的内容代表了一个分组
+        /[a-z][0-9]/ig
+        匹配一个字符后拼接一个数字
+        a1
+        o2
+        d3
+
+        /([a-z])([0-9])/ig
+        匹配一个字符后拼接一个数字，分组匹配字符，分组匹配数字
+        a1     a     1
+        o2     o     2
+        d3     d     3
+        var str = 'qwe2r4t6'
+        var pattern = /([a-z])([0-9])/ig
+        console.log(pattern.exec(str))
+
+    3.数量词
+        exp{3}        将前面的表达式匹配3次
+        exp{3,5}     将前面的表达式匹配3~5次
+        exp{3,}     将前面的表达式匹配3+次
+        exp*         将前面的表达式匹配0次或多次
+        exp+         将前面的表达式匹配1次或多次
+        exp?         将前面的表达式匹配0次或1次
+
+        贪婪匹配
+            /\d{2,}/
+            尽可能多的匹配
+            var str = "abc123456789"
+            var pattern = /\d{2,}/ig
+            console.log(pattern.exec(str))
+
+        非贪婪匹配
+            /\d{2,}?/
+            尽可能少的匹配
+            var str = "abc123456789"
+            var pattern = /\d{2,}?/ig
+            console.log(pattern.exec(str))
+
+3、正则表达式原型中属性
+    flags       正则表达式模式的字符串表示      
+    global      如果模式中包含g，则返回true
+    ignoreCase  如果模式中包含i，则返回true
+    multiline   如果模式中包含m，则返回true
+    source      正则表达式的字符串表示
+    lastIndex   如果正则表达式中有修饰符'g'，这时，在pattern中会维护lastIndex属性，记录下一次开始的位置，
+                当第二次执 行exec的时候，从lastIndex开始检索；如果正则表达式中没有修饰符'g'，不会维护lastIndex属性，每次执行exec，都是从开始位置检索
+
+    举例：
+        var str = 'hello world'
+        var pattern = /he/gim
+        console.log(pattern)
+        console.log(pattern.global)
+        console.log(pattern.multiline)
+        console.log(pattern.ignoreCase)
+
+4、正则表达式原型中方法
+    test()
+        检测字符串是否能够匹配模式
+        参数：字符串
+        返回值：true/false
+        举例：
+            var str = 'hello world'
+            var pattern = /he/gim
+            console.log(pattern.test(str))
+    exec()
+        检索出字符中的正则表达式，将满足要求的字符串放入数组中
+        参数：字符串
+        返回值：满足要求字符串组成的数组/null
+        举例：
+            var str = 'hello world'
+            var pattern = /l/gim
+            console.log(pattern.exec(str))
+            console.log(pattern.exec(str))
+            console.log(pattern.exec(str))
+            console.log(pattern.exec(str))
+        
+        能否使用循环打印exec()?
+            var str = 'hello world'
+            var pattern = /l/gim
+            var temp = []
+            var result;
+            while(result = pattern.exec(str)) {
+                temp.push(result[0])
+            }
+            console.log(temp)
+
+            如果希望将满足条件的字符串放到一个数组中，如何实现？
+                var str = 'hello world'
+                var pattern = /l/gim
+                var temp = []
+                var result;
+                while(result = pattern.exec(str)) {
+                    console.log(result)
+                    temp.push(result[0])
+                }
+                console.log(temp)
+
+        方法match()  ---&gt;  字符串原型的方法
+            var str = 'hello world'
+            var pattern = /l/gim
+            console.log(str.match(pattern))
+
+5、案例
+    1.手机号的验证
+        第一位数字输入的必须是1，第二位数字输入的必须是3,4,5,7,8,9其中的一位，后面的只能输入0-9的数字，不能输入字母或其他的字符，输入的必须是一个十一位数的号码
+
+        var str = '17393141274';
+        var pattern = /^1[3,4,5,7,8,9][0-9]{9}$/img;
+        console.log(pattern.test(str));
+        通过$来限制手机的位数为11位
+    
+    2. 将下方字符串中电话号码检索出
+        var str = "briup telephone is 0512-5511000, baidu telephone is 0100-5518888."
+        var pattern = /[0-9]{4}-[0-9]{7}/gim
+        var arr = []
+        var res;
+        while(res = pattern.exec(str)) {
+            arr.push(res[0])
+        }
+        console.log(arr)
+
+    3.邮箱的验证
+        规则：
+        @之前必须有内容且只能是字母（大小写）、数字、下划线(_)、减号（-）、点（.）
+        @和最后一个.之间必须有内容且只能是字母（大小写）、数字、点（.）、减号（-），且两个点不能紧挨着
+        最后一个.之后必须有内容且内容只能是字母（大小写）、数字且长度为大于等于2个字节，小于等于6个字节`
+            var str = 'zhangnn@briup.com'
+            var reg = /^[a-zA-Z0-9]+([-_.][a-zA-Z0-9]+)*@[a-zA-Z0-9]+([-_.][a-zA-Z0-9]+)*\.[a-z]{2,}$/
+            console.log(reg.test(str))
+</code></pre>
+<p>13.包装器类型<br>    提供方法，让我们操作基本数据类型</p>
+<pre><code>基本包装器    Number() String() Boolean() 
+
+String.prototype.xxx
+    length
+        获取字符串中字数的数量
+
+        var str = 'helloworld';
+        var length = str.length;
+        console.log(length); // 10
+
+    charAt(index)
+        获取指定索引处的字符
+
+        var str = 'helloworld';
+        var char1 = str.charAt(2);
+        var char2 = str.charAt(20);
+        console.log(char1); // l
+        console.log(char2); // ''
+
+    charCodeAt(index)
+        获取指定索引处的字符编码
+
+        var str = 'helloworld';
+        var charCode = str.charCodeAt(2);
+        console.log(charCode); // 108
+
+    indexOf(val)
+        获取指定字符在字符串中首次出现时的索引，如果该字符不属于字符串，返回-1
+
+        var str = 'helloworld';
+        var char = str.indexOf('l');
+        console.log(char); // 2
+
+        拓展：数组去重   ---&gt;   数组中也有indexOf() 方法，可返回数组中某个指定的元素首次出现时的索引。
+            var arr = [1,2,3,1,2,5];
+                数组原索引：0 1 2 3 4 5     
+                检测结果：  0 1 2 0 1 5
+
+            function norepeat(arr){
+                for(var i=0;i&lt;arr.length;i++){
+                    if(arr.indexOf(arr[i]) != i){
+                        arr.splice(i,1); // 删除当前项
+                        i--; // 数组下标回退
+                    }
+                }
+                return arr;
+            }
+            var result = norepeat(arr);
+            console.log(result); // [1,2,3,5]
+
+            执行过程
+                arr.indexOf(arr[i])     i
+                        0                0
+                        1                1
+                        2                2
+                        0                3
+                            arr.splice(3,1) -&gt; [1,2,3,1,2,5] ==&gt; [1,2,3,2,5];
+                        0                3
+                            arr.splice(3,1) -&gt; [1,2,3,2,5] ==&gt; [1,2,3,5];
+                        3                3
+
+    concat()
+        连接两个字符串
+
+        var str1 = 'hello';
+        var str2 = 'world';
+        console.log(str1.concat(str2)); // 'helloworld'
+
+        也可以使用+拼接
+        console.log(str1 + str2); // 'helloworld'
+
+    slice(begin,end)
+        截取子字符串，begin开始位置，end结束位置，不包含结束位置
+
+        var str = 'helloworld';
+        console.log(str.slice(2,4)); // ll
+
+    trim()
+        删除字符串左右两边的空格
+
+        var str = ' hello world ';
+        console.log(str.trim()); // 'hello world'
+
+    toUpperCase()
+        转换为大小
+
+        var str = 'hello world';
+        console.log(str.toUpperCase()); // 'HELLO WORLD'
+
+    toLowerCase()
+        转换为小写
+
+        var str = 'HELLO WORLD';
+        console.log(str.toUpperCase()); // 'hello world'
+
+    match(regexp)
+        查找匹配的内容，返回值为数组，保存了所有匹配的内容
+        案例见正则表达式
+
+    split()
+        把字符串分割为字符串数组
+
+        使用了''
+            var str = 'hello';
+            var result = str.split('');
+            console.log(result); // ['h','e','l','l','o']
+
+        没使用''
+            var str = 'hello';
+            console.log(str.split()); // ['hello']
+</code></pre>
+<p>14.Math对象<br>    Math.ceil()     向上舍入<br>    Math.floor()    向下舍入<br>    Math.round()    四舍五入<br>    Math.random()   随机数（0-1的小数）</p>
+<pre><code>举例：
+    var num = 11.7
+    console.log(Math.ceil(num))
+    console.log(Math.floor(num))
+    console.log(Math.round(num))
+    console.log(Math.random())
+</code></pre>
+<p>15.Date对象<br>    1、实例化日期对象<br>        var date = new Date()<br>        console.log(date)</p>
+<pre><code>2、Date对象方法
+    var date = new Date()
+
+    getDate()
+        表示获取当前月的日期
+        console.log(date.getDate())
+
+    getFullYear()
+        表示获取当前年份
+        console.log(date.getFullYear())
+
+    getMonth()
+        表示获取当前月份（0表示1月，11表示12月）
+        console.log(date.getFullYear())
+    
+    getDay()
+        返回一个星期中的某一天
+        console.log(date.getDay())
+
+    getHours()
+        返回小时
+        console.log(date.getHours())
+
+    getMinutes()
+        返回分钟
+        console.log(date.getMinutes())
+
+    getSeconds()
+        返回秒
+        console.log(date.getSeconds())
+
+    getTime()
+        返回距 1970 年 1 月 1 日之间的毫秒数
+        console.log(date.getTime())
+        
+        时间戳
+            格林威治时间1970年01月01日00时00分00秒(北京时间1970年01月01日08时00分00秒)
+            至
+            现在的总秒数
+
+    toLocaleString()
+        根据本地时间把 Date 对象转换为字符串，并返回结果
+        console.log(date.toLocaleString())
+</code></pre>
+<p>17、高级面向对象技术<br>    目的：利用一种机制可以帮我们创建具有特殊功能的对象</p>
+<pre><code>之前都是通过对象字面量或者构造函数创建创建单个对象
+    var obj = {
+        name:'xpf',
+        age:25,
+        gender:'male'
+        ...
+    }
+
+    现在有了一个对象obj，我需要再去创建一个对象obj2，并且里面的属性名一样，如何创建？
+
+    var obj2 = {
+        name:'xpf',
+        age:25,
+        gender:'male'
+        ...
+    }
+
+    var obj3 = {
+        ...
+    }
+
+问题：
+    创建多个相似对象的时候会产生很多冗余的代码
+
+为了解决这样的问题，人们开始寻找解决方法，也就是  能不能批量的创建对象？
+
+1) 封装/创建对象的过程【api的本质】
+    1. 工厂函数模式
+        提供一个函数，每调用一次该函数，返回一个对象
+            function factory(name1,age1,gender1){
+                var obj = {
+                    name:name1,
+                    age:age1,
+                    gender:gender1,
+                    sayMessage:function(){
+                        console.log(this.name,this.age,this.gender)
+                    }
+                }
+                return obj;
+            }
+            var obj1 = factory("xpf",25,'male'); // { name: 'xpf', age: 25, gender: 'male' }
+            var obj2 = factory("zhangsan",30,'female'); // {name:'zhangsan',age:30,gender: 'female'}
+            obj1.sayMessage(); // xpf 25 male
+            obj2.sayMessage(); // zhangsan 30 female
+
+
+            精简模式--&gt;
+            function factory(name1,age1,gender1){
+                return {
+                    name:name1,
+                    age:age1,
+                    gender:gender1,
+                    sayMessage:function(){
+                        console.log(this.name,this.age,this.gender)
+                    }
+                }
+            }
+            var obj1 = factory("xpf",25,'male'); // { name: 'xpf', age: 25, gender: 'male' }
+            var obj2 = factory("zhangsan",30,'female'); // {name:'zhangsan',age:30,gender: 'female'}
+            obj1.sayMessage(); // xpf 25 male
+            obj2.sayMessage(); // zhangsan 30 female
+
+
+            问题：现在创建的是两个'人'的对象，如果我想创建一个'人'和一只'狗'
+
+                function factory(name,age,gender){
+                    var obj = {
+                        name:name,
+                        age:age,
+                        gender:gender
+                    }
+                    return obj
+                }
+
+                var obj1 = factory('xpf',25,'male');
+                var obj2 = factory('小黑',3,'雄性');
+                console.log(typeof(obj1)); // object
+                console.log(typeof(obj2)); // object
+
+                是人是狗无法区分
+
+        解决：
+            解决了多个相似对象创建的时候，代码冗余问题
+        问题：
+            1) 类型无法细分 (由于使用了return{}，所以创建出来的所有obj都是Object类型)
+                虽然解决了创建多个相似对象的问题，但却没有解决对象识别的问题(即如何得知一个对象的类型)
+
+    2. 构造函数模式
+        内置构造函数
+            Object、Array、Date、Number、String、Boolean、RegExp
+        自定义构造函数
+            1、js中可以自定义构造函数，从而自定义对象类型的属性和方法
+            2、构造函数的首字母大写
+
+            function Person(){}
+
+            //'人'的构造函数
+            function Person(name,age,gender){
+                this.name = name;
+                this.age = age;
+                this.gender = gender;
+                this.words = function(){
+                    console.log('嘤嘤嘤')
+                }
+            }
+            var per1 = new Person('xpf',25,'male');
+            var per2 = new Person('zhangsan',30,'female');
+
+            console.log(per1); // Person {name:'xpf',age:25,gender:'male',sayName:[Function]}
+            console.log(per2); // Person {name:'zhangsan',age:30,gender:'female',sayName:[Function]}
+            per1.words(); // 嘤嘤嘤
+
+
+            //'狗'的构造函数
+            function Dog(name,age,gender){
+                this.name = name;
+                this.age = age;
+                this.gender = gender;
+                this.words = function(){
+                    console.log('汪汪汪')
+                }
+            }
+            var dog1 = new Dog('小红',2,'雌性');
+            var dog2 = new Dog('小黑',4,'雄性');
+            console.log(dog1); // Dog { name: '小红', age: 2, gender: '雌性', words: [Function] }
+            console.log(dog2); // Dog { name: '小黑', age: 4, gender: '雄性', words: [Function] }
+            dog1.words(); // 汪汪汪
+            dog2.words(); // 汪汪汪
+
+        现象：
+            1、构造函数首字母大写   ---&gt;   (规范)
+            2、没有显式地创建对象
+            3、将属性和方法赋值给了 this 对象
+            4、没有return语句
+
+        说明：使用new关键字调用构造函数创建对象实例，实际上执行了如下步骤(构造函数的执行流程)  --  隐式
+            1、创建一个新对象
+            2、将构造函数的作用域赋值给这个对象(this指向该对象)
+            3、执行构造函数中的代码(给新对象添加属性与方法)
+            4、返回一个新对象
+
+        区别：构造函数与普通函数的区别
+            1、构造函数也是一个普通函数，创建方式和普通函数一样(函数声明)，但构造函数习惯上首字母大写
+            2、调用方式不一样
+                普通函数的调用方式：直接调用 person(); 
+                构造函数的调用方式：需要使用new关键字来调用 new Person();
+            3、返回值不一样
+                普通函数：因为没有返回值，所以为undefined
+                    function person(){
+
+                    }
+                    var per = person();
+                    console.log(per); // undefined
+                构造函数：构造函数会马上创建一个新对象，并将该新对象作为返回值返回
+                    function Person(){
+
+                    }
+                    var per = new Person();
+                    console.log(per); // Person {}
+
+        解决：
+            解决了工厂函数模式遗留的类型细分问题
+        问题：
+            1) 函数会重复创建/破解封装性
+                每个方法都要在每个实例上重新创建一次，也就是每次调用构造函数的时候，都会创建一个对象，而对象中又会每次去创建一个words方法(函数)
+
+                期望将这个方法提取出来
+
+        最终解决方案
+
+    3. 构造函数模式与原型相结合模式
+        属性保存在实构造函数中，方法保存在构造函数原型中
+            function Dog(name,age,gender){
+                this.name = name;
+                this.age = age;
+                this.gender = gender;
+            }
+            Dog.prototype.words = function(){
+                console.log('汪汪汪')
+            }
+            var dog1 = new Dog('小红',2,'雌性');
+            var dog2 = new Dog('小黑',4,'雄性');
+            console.log(dog1);
+            console.log(dog2);
+            dog1.words(); // 汪汪汪
+
+            console.log(dog1.words === dog2.words); // true
+
+2) 继承
+    当我们创建一个构造函数时，构造函数会获得一个prototype属性，该属性是一个指针，指向一个原型对象，原型对象包含一个constructor属性，该属性也是一个指针，指向构造函数，而当我们创建构造函数的实例时，该实例其实会获得一个[[Prototype]]属性，指向原型对象
+
+    1. 原型链继承 (子构造函数的原型指向父构造函数的实例)
+        原理：让一个引用类型继承另一个引用类型的属性和方法
+
+        有钱人Person1
+            function Person1(name,age,gender){
+                this.name = name;
+                this.age = age;
+                this.gender = gender
+            }
+            Person1.prototype.money = function(){
+                console.log('我有很多钱');
+            }
+
+            var person1 = new Person1('xpf',25,'male');
+            person1.money();
+            console.log(person1);
+
+            var person2 = new Person1('zhangsan',12,'female');
+            person2.money();
+            console.log(person2);
+
+
+        没钱Person2(没money方法)
+            function Person2(name,age,gender){
+                this.name = name;
+                this.age = age;
+                this.gender = gender;
+            }
+            var person2 = new Person2('zhangsan',30,'male');
+            person2.money(); // 报错
+            console.log(person2);
+
+            此时，Person2创建出来的实例都无法调用money方法，否则报错
+            Person2家里的孩子无法用Person1家里的钱，否则会报警
+
+            第一步(不加Person2.prototype.constructor = Person2)
+                function Person1(name,age,gender){
+                    this.name = name;
+                    this.age = age;
+                    this.gender = gender
+                }
+                Person1.prototype.money = function(){
+                    console.log('我有很多钱');
+                }
+
+                var person1 = new Person1('xpf',25,'male');
+                person1.money();
+                console.log(person1); // Person1 { name: 'xpf', age: 25, gender: 'male' }
+
+                Person2.prototype = new Person1();
+
+                function Person2(name,age,gender){
+                    this.name = name;
+                    this.age = age;
+                    this.gender = gender;
+                }
+                var person2 = new Person2('zhangsan',30,'male');
+                person2.money();
+                console.log(person2); // Person1 { name: 'zhangsan', age: 30, gender: 'male' }
+
+                此时，Person2家的孩子变成了Person1家的孩子
+
+            第二步
+                function Person1(name,age,gender){
+                    this.name = name;
+                    this.age = age;
+                    this.gender = gender
+                }
+                Person1.prototype.money = function(){
+                    console.log('我有很多钱');
+                }
+
+                var person1 = new Person1('xpf',25,'male');
+                person1.money();
+                console.log(person1); // Person1 { name: 'xpf', age: 25, gender: 'male' }
+
+                Person2.prototype = new Person1();
+                Person2.prototype.constructor = Person2;
+                function Person2(name,age,gender){
+                    this.name = name;
+                    this.age = age;
+                    this.gender = gender;
+                }
+                var person2 = new Person2('zhangsan',30,'male');
+                person2.money();
+                console.log(person2); // Person2 { name: 'zhangsan', age: 30, gender: 'male' }
+
+    2. 借用构造函数 (不仅可以继承方法，也可以继承属性)
+        Person1.call(this,name,age)
+
+        function Person1(name,age,gender){
+            this.name = name;
+            this.age = age;
+            this.gender = gender
+        }
+        Person1.prototype.money = function(){
+            console.log('我有很多钱');
+        }
+
+        var person1 = new Person1('xpf',25,'male');
+        person1.money();
+        console.log(person1);
+
+        Person2.prototype = new Person1();
+        Person2.prototype.constructor = Person2;
+
+        function Person2(name,age,gender,weight){
+            //此处，调用了Person1函数，将当前Person2函数的this传递给了Person1
+            //也就是Person1内部的this指向了Person2
+            Person1.call(this,name,age,gender);
+            this.wieght = weight;
+        }
+        var person2 = new Person2('zhangsan',30,'male',130);
+        person2.money();
+        console.log(person2);
+</code></pre>
+<p>18、DOM（js操作html的api）<br>    1) DOM构造函数树<br>        </p><div>hello</div><p></p>
+<pre><code>    Node(节点)
+        文档节点    Document类型    
+        *元素节点 Element类型    &lt;div&gt;&lt;/div&gt;
+        文本节点 Text类型        hello
+        注释节点 Comment类型 &lt;!--注释--&gt;
+
+2) 实例化（如何创建对象）
+        var one = document.getElementById("one");
+
+3) API(在线文档) 火狐 mdn
+    1. Document
+        文档，表示整个html文档，一般情况下一个html可以使用一个Document的实例来表示，即document
+        属性
+            documentElement    HTML页面中的&lt;html&gt;元素
+            body            HTML页面中的&lt;body&gt;元素
+            head            HTML页面中的&lt;head&gt;元素
+            title            HTML页面中的title内容
+        方法：
+            getElementById()
+            getElementsByClassName()
+            getElementsByTagName()
+            getElementsByName()
+
+        window.onload = function(){
+            var dom = document
+            var dom1 = document.getElementById('one')
+            var dom2 = document.getElementsByClassName('myDiv')[0]
+            var dom3 = document.getElementsByTagName('div')[0]
+            var dom4 = document.getElementsByName('xx')[0]
+
+            console.log(dom)
+            console.log(dom.body)
+            console.log(dom.head)
+            console.log(dom.title)
+            console.log(dom1)
+            console.log(dom2)
+            console.log(dom3)
+            console.log(dom4)
+        }
+
+    2. Element【*】
+        元素/标签
+            body/div/p/span/table/form...
+        属性
+            1) 元素属性
+                    id
+                    name
+                    href
+                    src
+                    alt
+                    target
+                    style
+                        获取或设置一个元素的样式
+
+                    &lt;img src="xxx" alt="" style="color:red"&gt;
+
+                    var img = document.getElementsByTagName('img')[0];
+                    console.log(img.src)
+                    console.log(img.style)
+
+            2) 元素层次结构
+                innerHTML
+                    获取或设置一个元素内的html内容，包含换行
+                innerText
+                    获取或设置一个元素内的文本内容
+
+                &lt;div id="one"&gt;hello&lt;/div&gt;
+
+                var dom = document.getElementById('one')
+                //dom.innerText = 'xpf';
+                //dom.style.color = 'red';
+                console.log(dom.innerHTML)
+                console.log(dom.innerText)
+
+        方法(与属性相关)
+            getAttribute(属性名)
+                返回指定的属性值
+
+                &lt;div style="color: red;" name="xxx" class="myDiv" id="one"&gt;&lt;/div&gt;
+
+                var dom = document.getElementsByClassName('myDiv')[0]
+
+                console.log(dom.getAttribute('name'))
+                console.log(dom.getAttribute('id'))
+                console.log(dom.getAttribute('class'))
+                console.log(dom.getAttribute('style'))
+
+            setAttribute(属性名,属性值)
+                把指定属性设置或修改为指定的值，注意，该方法并没有返回值
+                    原本存在的时候，为修改
+                    原本不存在的时候，为设置
+
+                window.onload = function(){
+                    var dom4 = document.getElementsByName('xx')[0]
+
+                    console.log(dom4.getAttribute('class'))
+                    //修改之前
+                    console.log(dom4)
+                    //修改
+                    console.log(dom4.setAttribute('class','ss')); // undefined
+                    //修改之后
+                    console.log(dom4)
+                }
+
+            querySelector(选择器)
+                返回文档中匹配指定 CSS 选择器的第一个元素
+            querySelectorAll(选择器)
+                返回文档中匹配指定 CSS 选择器的所有元素
+
+                window.onload = function(){
+                    var dom = document.querySelector('.myDiv')
+                    console.log(dom); // 只返回第一个类名为myDiv的div
+                }
+                &lt;div id="one" class="myDiv" name='xx'&gt;hello&lt;/div&gt;
+                &lt;div id="one" class="myDiv" name='xx'&gt;hello&lt;/div&gt;
+                &lt;div id="one" class="myDiv" name='xx'&gt;hello&lt;/div&gt;
+                &lt;div id="one" class="myDiv" name='xx'&gt;hello&lt;/div&gt;
+
+
+                window.onload = function(){
+                    var dom = document.querySelectorAll('.myDiv')
+                    console.log(dom); // 返回所有类名为myDiv的div
+                }
+                &lt;div id="one" class="myDiv" name='xx'&gt;hello&lt;/div&gt;
+                &lt;div id="one" class="myDiv" name='xx'&gt;hello&lt;/div&gt;
+                &lt;div id="one" class="myDiv" name='xx'&gt;hello&lt;/div&gt;
+                &lt;div id="one" class="myDiv" name='xx'&gt;hello&lt;/div&gt;
+
+    3. Text
+        文本内容,如下"hello world"表示文本内容
+        &lt;div&gt;hello world&lt;/div&gt;
+    
+    4. Comment
+        注释，如下
+        &lt;!-- 注释内容 --&gt;
+
+
+    案例一：图片切换
+        btn.onclick = function(){
+            if(img.src == './js2.jpg'){
+                img.src = './js3.jpg'
+            } else {
+                img.src = './js2.jpg'
+            }
+        }
+
+        ===&gt;
+
+        btn.onclick = function(){
+            if(img.getAttribute('src') == './js2.jpg'){
+                img.src = './js3.jpg'
+            } else {
+                img.src = './js2.jpg'
+            }
+        }
+    
+4) 节点操作
+    1、节点创建
+        document.createElement('标签名')
+
+        document.createElement('div')表示创建了一个标签为div的节点
+
+        window.onload = function(){
+            //获取父节点
+            var parent = document.getElementsByClassName('parent')[0];
+            //创建新节点
+            var newChild = document.createElement('div')
+            //给新节点设置内容
+            newChild.innerText = '新节点'
+            //将新节点追加到父节点后面
+            parent.appendChild(newChild)
+        }
+
+    2、节点的追加
+        &lt;div class="parent"&gt;
+            &lt;div class="child"&gt;item1&lt;/div&gt;
+            &lt;div class="child"&gt;item2&lt;/div&gt;
+            &lt;div class="child"&gt;item3&lt;/div&gt;
+            &lt;div class="child"&gt;item4&lt;/div&gt;
+        &lt;/div&gt;
+
+        1) parent.appendChild(newChild)
+            将节点追加到parent的最后，追加的可以是自己新创建的节点，也可以是原本已存在的节点
+
+            注意：
+                任何DOM节点不能同时出现在文档中的多个位置
+                ==&gt; 
+                如果追加的节点为原本已存在的，只会改变该节点的位置
+
+            window.onload = function(){
+                var parent = document.getElementsByClassName('parent')[0];
+                var item1 = document.getElementsByClassName('child')[0];
+                parent.appendChild(item1);
+            }
+
+        2) parent.insertBefore(newChild,item1)
+            第一个参数为要插入的节点
+            第二个参数为要插入的位置
+
+            window.onload = function(){
+                var parent = document.getElementsByClassName('parent')[0];
+                var item1 = document.getElementsByClassName('child')[1];
+                var newChild = document.createElement('div')
+                newChild.innerText = '新节点'
+                parent.insertBefore(newChild,item1)
+            }
+
+    3、节点的删除
+        parent.removeChild(item1)
+
+        window.onload = function(){
+            var parent = document.getElementsByClassName('parent')[0];
+            var item1 = document.getElementsByClassName('child')[1];
+            parent.removeChild(item1)
+        }
+
+    4、节点的复制(克隆)
+        1) 浅复制
+            cloneNode() / cloneNode(false)
+            默认为浅复制，只复制标签
+
+            window.onload = function(){
+                var parent = document.getElementsByClassName('parent')[0];
+                var item1 = document.getElementsByClassName('child')[0];
+                var clone_node = item1.cloneNode()
+                parent.appendChild(clone_node)
+            }
+
+        2) 深复制
+            cloneNode(true)
+            传递参数true，复制标签及内容
+
+            window.onload = function(){
+                var parent = document.getElementsByClassName('parent')[0];
+                var item1 = document.getElementsByClassName('child')[0];
+                var clone_node = item1.cloneNode(true)
+                parent.appendChild(clone_node)
+            }
+</code></pre>
+<p>19、事件<br>    1) 事件三要素<br>        1. 事件目标<br>            获取事件源<br>        2. 事件处理程序<br>            为事件源绑定事件处理函数，当绑定的事件类型被触发的时候该函数执行</p>
+<pre><code>        事件类型：
+            click 、focus 、blur 、submit 、mouseover 、mouseout 、...
+    3. 事件对象
+        当事件处理函数执行的时候，dom会将事件对象传递给事件处理函数
+        可以用event接收
+
+2) 事件流
+    描述的是从页面中接收事件的顺序
+    'DOM2级事件'规定了事件流包括三个阶段：事件捕获阶段，处理目标阶段和事件冒泡阶段。首先发生的是事件捕获，为截获事件提供了机会。然后是实际的目标接收到事件。最后是事件冒泡。
+      事件捕获： document-&gt;html-&gt;body  
+      处理目标： 事件处理
+      事件冒泡： div-&gt;body-&gt;html-&gt;document
+
+    1. 事件冒泡（默认事件执行顺序）
+        含义：
+            事件开始由最具体的元素接收，然后逐级向上传播到不具体的节点
+        特点：
+            从内往外
+        前提条件：
+            1. 元素需要嵌套
+            2. 每层元素上都绑定了事件
+
+
+        &lt;div id="outer"&gt;
+            &lt;div id="center"&gt;
+                &lt;div id="inner"&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        var outer = document.getElementById('outer');
+        var center = document.getElementById('center');
+        var inner = document.getElementById('inner');
+        outer.onclick = function(){
+            console.log(this)
+        }
+        center.onclick = function(){
+            console.log(this)
+        }
+        inner.onclick = function(){
+            console.log(this)
+        }
+
+        1、阻止事件冒泡
+            event.stopPropagation()
+
+            inner.onclick = function(){
+                console.log(this)
+                event.stopPropagation();
+            }
+        2、当前点击的事件对象
+            event.target
+
+            outer.onclick = function(){
+                console.log(this)
+                console.log(event.target)
+            }
+            center.onclick = function(){
+                console.log(this)
+                console.log(event.target)
+            }
+            inner.onclick = function(){
+                console.log(this)
+                console.log(event.target)
+            }
+
+    2. 事件捕获
+        含义：
+            不太具体的DOM节点应该更早接收到事件，而最具体的节点应该最后接收到事件
+        特点：
+            从外往内
+        参数：
+            第一个参数是 事件的类型(click、mouseover)
+            第二个参数是 事件处理函数
+            第三个参数是 布尔值，用于描述事件是冒泡还是捕获，该参数是可选的，默认为false
+                true    -&gt;        事件捕获
+                false    -&gt;        事件冒泡
+
+        outer.addEventListener('click',function(){
+            console.log(this)
+        },true)
+        center.addEventListener('click',function(){
+            console.log(this)
+        },true)
+        inner.addEventListener('click',function(){
+            console.log(this)
+        },true)
+
+3) 事件绑定方式
+    1. onxxx
+        属性
+        简单，兼容性比较好
+        outer.onclick = function(){
+            console.log(this)
+        }
+
+        outer.onmouseover = function(){
+            console.log(this)
+        }
+
+    2. addEventListener
+        方法
+        outer.addEventListener('click',function(){
+            console.log(this)
+        })
+
+        outer.addEventListener('mouseover',function(){
+            console.log(this)
+        })
+
+    3. attachEvent
+        方法
+        IE低版本下才能兼容
+
+4) 事件类型
+    click     鼠标点击
+
+    scroll    页面滚动
+        var two = document.getElementById('two');
+        document.onscroll = function(){
+            console.log(document.body.scrollTop)
+        }
+
+    keyup    键盘抬起
+    keydown    键盘落下
+        当键盘事件发生时，event对象的keyCode属性中包含一个代码与键盘上的特定键对应
+        keydown        按下键盘任意键时触发，如果按住不放会重复触发该事件
+        keypress    按下键盘字符键时触发，如果按住不放会重复触发该事件
+
+        document.onkeydown = function(){
+            console.log(event.keyCode)
+        }
+
+
+        var input = document.getElementsByTagName('input')[0]
+        input.onkeydown = function(){
+            if(event.keyCode == 13){
+                alert('请输入正确的用户名密码！')
+            }
+        }
+
+    focus    聚焦
+    blur    失焦
+
+    mouseover    光标移动到元素上，支持子元素
+    mouseout    光标移出元素，支持子元素
+ 
+    mouseenter    光标移动到元素上，不支持子元素
+    mouseleave    光标移出元素，不支持子元素
+
+    onload
+        window.onload 当前页面中的内容加载完毕
+
+
+    案例一：
+        实现历史记录的功能
+        使用mouserenter
+
+    案例二：
+        页面滚动到某一位置再显示节点
+    
+5) 事件代理
+    用法：
+        将事件绑定在当前元素的父元素上而非当前元素上，这时候当点击当前元素的时候，执行父元素上绑定的事件处理函数，可以通过event.target获取当前元素
+
+    好处：
+        父元素代理子元素所有的事件，子元素可以动态添加和删除而不用频繁绑定事件
+
+    案例：
+        没使用事件代理：
+            需求一：实现光标移入li时，给当前li添加背景色，其他li没有背景色
+
+            思路：将所有的li获取到(类数组)，转换为数组，然后遍历数组的每一项(即每一个li)，给每一项绑定事件
+
+        var li = document.getElementsByTagName('li');
+        var liList = Array.prototype.slice.call(li,0)
+        liList.forEach(function(item,index){
+            //移入时，添加背景色
+            item.onmouseenter = function(){
+                event.target.style.background = 'red'
+            }
+            //移出时，去掉背景色
+            item.onmouseleave = function(){
+                event.target.style.background = 'none'
+            }
+        })
+
+
+
+        需求二：并且，在给ul新添加li的情况下，新增的li也要有如上功能
+            使用事件代理
+
+        问题代码:
+            var li = document.getElementsByTagName('li');
+            var liList = Array.prototype.slice.call(li,0)
+            liList.forEach(function(item,index){
+                item.onmouseenter = function(){
+                    event.target.style.background = 'red'
+                }
+                item.onmouseleave = function(){
+                    event.target.style.background = 'none'
+                }
+            })
+            
+            var btn = document.getElementById('btn');
+            var ul = document.getElementsByTagName('ul')[0];
+            btn.onclick = function(){
+                var newLi = document.createElement('li')
+                ul.appendChild(newLi)
+            }
+            新增的li没有绑定事件
+
+        正确代码：事件代理
+            var ul = document.getElementsByTagName('ul')[0];
+            ul.onmouseover = function(){
+                // console.log(event.target)
+                if(event.target.nodeName == 'LI'){
+                    event.target.style.background = 'red'
+                }
+            }
+            ul.onmouseout = function(){
+                // console.log(event.target)
+                if(event.target.nodeName == 'LI'){
+                    event.target.style.background = 'none'
+                }
+            }
+            var btn = document.getElementById('btn');
+            btn.onclick = function(){
+                var newLi = document.createElement('li')
+                ul.appendChild(newLi)
+            }                
+</code></pre>
+<p>20、BOM(浏览器对象模型)<br>    使用JavaScript来访问和控制浏览器对象实例<br>    1) 超时调用<br>        含义：<br>            在指定的毫秒数后调用函数<br>        参数：<br>            第一个参数是         要执行的代码(必需)<br>            第二个参数是        以毫秒表示的时间(可选，默认为0)<br>                1000毫秒 = 1秒<br>        返回值：<br>            返回一个 ID（数字），可以将这个ID传递给 clearTimeout() 来取消执行<br>        语法：<br>            var id = setTimeout(function(){},time)</p>
+<pre><code>        window.onload = function(){
+            setTimeout(function(){
+                console.log(1)
+            },1000)
+        }
+    清除：
+        clearTimeout(id)
+
+2) 间歇调用
+    含义：
+        按照指定的周期（以毫秒计）来调用函数，该方法会不停地调用函数，直到 clearInterval() 被调用或窗口被关闭
+    参数：
+        第一个参数是         要执行的代码(必需)
+        第二个参数是        以毫秒表示的时间(必需)
+    返回值：
+         返回一个 ID（数字），可以将这个ID传递给clearInterval()来取消执行
+    语法：
+        var id = setInterval(function(){},time)
+
+
+        window.onload = function(){
+            var id = setInterval(function(){
+                console.log(1)
+            },1000)
+        }
+    清除：
+        clearInterval(id)
+
+    案例一：
+        根据栏目名查询栏目信息
+        findByName(){
+            var name = this.list[0].name
+            axios.get('http://47.106.244.1:8099/manager/category/findCategoryByCategoryname?name='+name).then((res)=&gt;{
+                console.log(res.data.data)
+            })
+        }
+
+    案例二：
+        实现点名
+            var div = document.getElementsByTagName('div')[0]
+            var arr = ['张三','李四','王五']
+
+            var id = setInterval(function(){
+                var index = Math.round(Math.random()*(arr.length-1))
+                div.innerText = arr[index]
+            },10)
+
+            var btn = document.getElementsByTagName('button')[0]
+            btn.onclick = function(){
+                clearTimeout(id)
+            }
+
+3) 系统对话框
+    alert()
+        警告框，会阻塞代码的执行，该方法接受一个字符串并显示给用户，无返回值
+        var result = alert(); // undefined
+
+    confirm()
+        确认对话框，显示一个'确定'和'取消'按钮，点击'确定'后，返回true
+        var result = confirm();
+            确定        true
+            取消     false
+
+    prompt()
+        会话框，提示用户输入一些文本，显示一个'确定'和'取消'按钮，点击'确定'后，返回用户输入的文本
+        var result = prompt();
+            确定        用户输入文本/空字符串
+            取消     null
+
+4) Location对象
+    包含有关当前 URL 的信息
+        1. 属性
+            host
+                返回一个URL的主机名和端口
+            href
+                返回完整的URL
+            port
+                返回一个URL服务器使用的端口号
+
+            window.onload = function(){
+                console.log(location)
+                console.log(location.host)
+                console.log(location.href)
+                console.log(location.port)
+            }
+
+        2. 方法
+            assign(url)
+                载入一个新的url，并在浏览记录中生成一条记录(可以回退)
+            replace()
+                用新的url替换当前的url，不会在浏览记录中生成一条记录(不可以回退)
+            reload()
+                重新载入当前的文档(刷新)
+
+            window.onload = function(){
+                var btn = document.getElementsByTagName('button')[0]
+                btn.onclick = function(){
+                    location.assign('https://www.runoob.com/jsref/obj-location.html')
+                }
+            }
+
+        ---&gt;
+            window.open(url)
+                新打开一个页面
+
+            window.open('文件部署地址')
+                可以下载一个文件
+
+5) 存储对象
+    浏览器提供了sessionStorage(会话存储)和localStorage(本地存储)两个存储对象来对网页的数据进行添加、删除、修改、查询操作
+
+    localStorage 
+        用于长久保存整个网站的数据，保存的数据没有过期时间，直到手动去除
+    sessionStorage 
+        用于临时保存同一窗口(或标签页)的数据，在关闭窗口或标签页之后将会删除这些数据
+
+    方法：
+        getItem(key)        返回指定键的值
+        setItem(key, value)    添加键和值，如果对应的值存在，则更新该键对应的值
+        removeItem(key)        移除键
+        clear()                清除存储对象中所有的键
+
+        情况一：存储单个键值对
+            window.onload = function(){
+                var btn1 = document.getElementById('btn1')
+                var btn2 = document.getElementById('btn2')
+                var btn3 = document.getElementById('btn3')
+                localStorage.setItem('token',111)
+                localStorage.setItem('username','xpf')
+
+                btn1.onclick = function(){
+                    var token = localStorage.getItem('token')
+                    console.log(token)
+                }
+                btn2.onclick = function(){
+                    localStorage.removeItem('token')
+                }
+                btn3.onclick = function(){
+                    localStorage.clear()
+                }
+            }
+
+        情况二：存储一个对象
+            window.onload = function(){
+                var btn1 = document.getElementById('btn1')
+                var obj = {
+                    name:'xpf',
+                    password:123321
+                }
+                localStorage.setItem('userInfo',JSON.stringify(obj))
+
+                btn1.onclick = function(){
+                    var token = localStorage.getItem('userInfo')
+                    console.log(JSON.parse(token))
+                }
+            }
+
+    案例：登录案例
+        用户发起登录请求 -&gt; 账号密码正确时返回token令牌 -&gt; 用户将后台返回的token存储到浏览器中 -&gt; 根据token查询用户基本信息 -&gt; 将查询到的基本信息存储到浏览器 -&gt; 根据id查询用户详细信息
+
+
+        用户名：&lt;input type="text" v-model='form.username'&gt;
+        密码：&lt;input type="text" v-model='form.password'&gt;
+        &lt;button @click="toLogin"&gt;登录&lt;/button&gt;
+        &lt;button @click="findUser"&gt;获取用户基本信息&lt;/button&gt;
+        &lt;button @click="findUserDetail"&gt;根据id查询用户详细信息&lt;/button&gt;
+
+        toLogin(){
+            axios.post('http://47.106.244.1:8099/manager/user/login',this.form).then((res)=&gt;{
+                console.log(res.data.data)
+                localStorage.setItem('token',res.data.data.token)
+            })
+        },
+        findUser(){
+            var token = localStorage.getItem('token')
+            console.log(token)
+            axios.get('http://47.106.244.1:8099/manager/user/info?token='+token).then((res)=&gt;{
+                console.log(res.data.data)
+                localStorage.setItem('info',JSON.stringify(res.data.data))
+            })
+        },
+        findUserDetail(){
+            var id = JSON.parse(localStorage.getItem('info')).id
+            axios.get('http://47.106.244.1:8099/manager/user/findUserById?id='+id).then((res)=&gt;{
+                console.log(res.data.data)
+            })
+        }
+</code></pre>
+<p>补充：<br>    1.<br>        function fn(val){<br>        　val+=10;<br>        　return val;<br>        }<br>        var val = 10;<br>        var result = fn(val);<br>        console.log(val);<br>        console.log(result);</p>
+<pre><code>2.
+    function fn(obj){ 
+        obj.name = "larry"; 
+    }
+    var obj = new Object(); 
+    obj.name = "tom";   
+    fn(obj); 
+    console.log(obj.name);
+
+3.
+    function setName(obj) {
+        obj.name = 'tom';
+        obj = {
+            name:'terry'
+        }
+        console.log(obj.name);
+    }
+    var person = {
+        name:'larry'
+    }
+    setName(person);
+    console.log(person.name);
+</code></pre>
+<p>补充：<br>    任何函数都是Function的实例<br>    =&gt;Object也是Function的实例，Function也是Function的实例</p>
+<pre><code>任何对象都是Object的实例
+=&gt;Function也是Object的实例
+</code></pre>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">yulong</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://yulong834.github.io/2021/06/03/js/">https://yulong834.github.io/2021/06/03/js/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">yulong</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2021/06/03/js/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="js">
+                        
+                        <span class="card-title">js</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-03
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            yulong
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/06/03/css/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="css">
+                        
+                        <span class="card-title">css</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-03
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            yulong
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="2939725092"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='false'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021</span>
+            
+            <span id="year">2021</span>
+            <a href="/about" target="_blank">yulong</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;siteTotalVisits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;siteTotalVisitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2021";
+                        var startMonth = "5";
+                        var startDate = "20";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/yulong834" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:494252830@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=494252830" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 494252830" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+    <script type="text/javascript">
+    var OriginTitile=document.title,st;
+    document.addEventListener("visibilitychange",function(){
+        document.hidden?(document.title="╭(°A°`)╮ 页面崩溃啦 ~",clearTimeout(st)):(document.title="(ฅ>ω<*ฅ) 噫又好啦 ~",st=setTimeout(function(){document.title=OriginTitile},3e3))
+    })
+    </script>
+
+    <!--动态线条背景-->
+<script type="text/javascript"
+color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+</script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":200,"height":380},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<!--烟花背景-->
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+<script type="text/javascript" src="/js/fireworks.js"></script>
+<!--文字-->
+<script type="text/javascript" src="/js/click_show_text.js"></script>
+
+<script type="text/javascript">
+//只在桌面版网页启用特效
+var windowWidth = $(window).width();
+if (windowWidth > 768) {
+    document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+}
+</script>
+
+<script src="/js/cursor.js"></script>
+
+</html>
